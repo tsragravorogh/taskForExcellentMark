@@ -9,6 +9,9 @@ public class MainFrame extends JFrame {
     private JButton rotateX = new JButton("rotateX");
     private JButton rotateY = new JButton("rotateY");
     private JButton rotateZ = new JButton("rotateZ");
+    private JButton transferX = new JButton("transferX");
+    private JButton transferY = new JButton("transferY");
+    private JButton transferZ = new JButton("transferZ");
 
 
     public MainFrame() throws HeadlessException {
@@ -22,6 +25,9 @@ public class MainFrame extends JFrame {
         dp.add(rotateX);
         dp.add(rotateY);
         dp.add(rotateZ);
+        dp.add(transferX);
+        dp.add(transferY);
+        dp.add(transferZ);
 
 
         plus.addActionListener(ae -> dp.transformPlus());
@@ -33,5 +39,11 @@ public class MainFrame extends JFrame {
         rotateY.addActionListener(ae -> dp.rotateY());
 
         rotateZ.addActionListener(ae -> dp.rotateZ());
+
+        transferX.addActionListener(ae -> dp.transferX());
+
+        transferY.addActionListener(ae -> dp.transferY());
+
+        transferZ.addActionListener(ae -> dp.transferZ());
     }
 }

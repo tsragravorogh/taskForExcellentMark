@@ -37,6 +37,10 @@ public class Line {
         first.rotateZ(degrees);
         second.rotateZ(degrees);
     }
+    public void transfer(int l, int m, int n) {
+        first.transfer(l, m, n);
+        second.transfer(l, m, n);
+    }
     public void draw(Graphics g) {
         g.drawLine((int)first.x, (int)first.y, (int)second.x, (int)second.y);
     }

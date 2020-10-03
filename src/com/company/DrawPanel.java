@@ -35,5 +35,16 @@ public class DrawPanel extends JPanel {
         tr.rotateZ(angle);
         repaint();
     }
-
+    public void transferX() {
+        tr.transferX(10, 0, 0);
+        repaint();
+    }
+    public void transferY() {
+        tr.transferX(0, 10, 0);
+        repaint();
+    }
+    public void transferZ() {
+        tr.transferX(0, 0, 10);
+        repaint();
+    }
 }
