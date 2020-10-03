@@ -76,7 +76,7 @@ public class Triangle {
         moveAll(movePoint.x, movePoint.y, movePoint.z);
     }
 
-    public void transferX(int l, int m, int n) {
+    public void transfer(int l, int m, int n) {
         Point movePoint = new Point(this.a.first.x, this.a.first.y, this.a.first.z);
         moveAll(-movePoint.x, -movePoint.y, -movePoint.z);
         this.a.transfer(l, m, n);

@@ -36,15 +36,15 @@ public class DrawPanel extends JPanel {
         repaint();
     }
     public void transferX() {
-        tr.transferX(10, 0, 0);
+        tr.transfer(10, 0, 0);
         repaint();
     }
     public void transferY() {
-        tr.transferX(0, 10, 0);
+        tr.transfer(0, 10, 0);
         repaint();
     }
     public void transferZ() {
-        tr.transferX(0, 0, 10);
+        tr.transfer(0, 0, 10);
         repaint();
     }
 }
