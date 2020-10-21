@@ -9,9 +9,12 @@ public class DrawPanel extends JPanel {
     private static final int angle = 30;
     @Override
     public void paint(Graphics g) {
+
         Graphics2D gr = (Graphics2D) g;
         gr.setColor(Color.BLACK);
         gr.clearRect(0, 0, getWidth(), getHeight());
+        super.paint(g);
+
         tr.drawTriangle(gr);
     }
 
