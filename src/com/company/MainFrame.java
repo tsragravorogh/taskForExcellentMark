@@ -12,7 +12,6 @@ public class MainFrame extends JFrame implements MouseWheelListener {
     private JButton rotateZ = new JButton("rotateZ");
     private JButton transferX = new JButton("transferX");
     private JButton transferY = new JButton("transferY");
-    private JButton transferZ = new JButton("transferZ");
     DrawPanel dp = new DrawPanel();
 
 
@@ -29,7 +28,7 @@ public class MainFrame extends JFrame implements MouseWheelListener {
         dp.add(rotateZ);
         dp.add(transferX);
         dp.add(transferY);
-        dp.add(transferZ);
+
 
         rotateX.addActionListener(ae -> dp.rotateX());
 
@@ -40,8 +39,6 @@ public class MainFrame extends JFrame implements MouseWheelListener {
         transferX.addActionListener(ae -> dp.transferX());
 
         transferY.addActionListener(ae -> dp.transferY());
-
-        transferZ.addActionListener(ae -> dp.transferZ());
     }
 
     @Override
